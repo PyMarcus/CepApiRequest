@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I know where you are</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+        <link rel="shortcut icon" href="/img/eye.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+    </head>
+
+    <body>
+        <article>
+                <nav>
+                    <h1>I know where you are!</h1>
+                </nav>
+                <section class="general_content">
+                    <section class="section_one">
+                        <input type="text" placeholder="CEP" name="cep" required id="cep">
+                        <input type="text" placeholder="Rua/Avenida" name="rua" id="rua">
+                    </section>
+                    <section class="section_two">
+                        <input type="text" placeholder="Bairro" name="Bairro" id="bairro">
+                        <input type="text" placeholder="Cidade" name="cidade" id="cidade">
+                        <input type="text" placeholder="UF" name="uf" id="uf">
+                    </section>
+                    <section class="button">
+                        <button onclick="Localize.request()">Localizar-me</button>
+  
+                    </section>
+                </section>
+
+                <figure>
+                    <img src="/img/pesquisa.png">
+                </figure>
+                
+       
+        </article>
+        <footer>
+            <script src="/js/localizeIp.js"></script>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-size: 95%;
+}
+
+:root{
+    --nav_bar_color: rgb(143, 29, 29);
+    --nav_bar_text_color: #fff;
+    --text_color: black;
+    --button_color: rgb(143, 29, 29);
+    --background_color: #fff;
+    --button_hover_color:rgb(233, 52, 52);
+    --button_text_color: #fff;
+    --input_hover_color: rgb(143, 29, 29);
+}
+
+
+html,body{
+    background-color: var(--background_color);
+    color: var(--text_color);
+    overflow-y: hidden;
+}
+
+section[class="general_content"]{
+    margin: auto;
+}
+
+
+/*navbar*/
+nav{
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 3%;
+    background-color: var(--nav_bar_color);
+    color: var(--nav_bar_text_color);
+    font-size: 2rem;
+    box-shadow: 3px 1.3px 2px black;
+}
+
+
+/*content*/
+
+section[class="section_one"]{
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+}
+
+section[class="section_two"]{
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+}
+
+input{
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 3%;
+    font-size: 1.5rem;
+    border-color: var(--nav_bar_color);
+    box-shadow: 1px 1.3px 2px black;
+    border-radius: 3%;
+}
+
+input:hover{
+    border-color: var(--input_hover_color);
+}
+
+/*botão*/
+
+section[class="button"]{
+    justify-content: center;
+    display:flex;
+}
+
+button{
+    border-radius: 5%;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--button_text_color);
+    padding: 0.5rem;
+    box-shadow: 1px 1.3px 2px black;
+    margin-top: 8%;
+    background-color: var(--button_color);
+}
+button:hover{
+    background-color: var(--button_hover_color);
+}
+
+
+figure{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+img{
+    width: 5rem;
+    line-height:2;
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1400px){
+    nav{
+        padding: 5%;
+        text-align: center;
+        margin-bottom: 3%;
+        background-color: var(--nav_bar_color);
+        color: var(--nav_bar_text_color);
+        font-size: 2.3rem;
+        box-shadow: 3px 1.3px 2px black;
+    }
+    section[class="section_one"]{
+        display: flex;
+        flex-direction: row;
+        margin: 1% auto;
+    }
+    #rua{
+        width: 60%;
+    }
+    #uf{
+        width: 20%;
+    }
+    #cidade{
+        width: 20%;
+    }
+    #bairro{
+        width: 50%;
+    }
+
+    input{
+        margin: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 2%;
+        font-size: 1.5rem;
+        border-color: var(--nav_bar_color);
+        box-shadow: 1px 1.3px 2px black;
+        border-radius: 3%;
+    }
+    
+    section[class="section_two"]{
+        display: flex;
+        flex-direction: row;
+        margin: 1% auto;
+    }
+    button{
+        border-radius: 5%;
+        border: none;
+        font-size: 2rem;
+        color: var(--button_text_color);
+        padding: 0.8rem;
+        box-shadow: 1px 1.3px 2px black;
+        margin-top: 8%;
+        background-color: var(--button_color);
+    }
+    img{
+        width: 7rem;
+        line-height:2;
+    }
+}
+    
+    @media  (min-width: 1401px) {
+        nav{
+            padding: 3%;
+            text-align: center;
+            margin-bottom: 3%;
+            background-color: var(--nav_bar_color);
+            color: var(--nav_bar_text_color);
+            font-size: 2.5rem;
+            box-shadow: 3px 1.3px 2px black;
+        }
+        section[class="section_one"]{
+            display: flex;
+            flex-direction: row;
+            margin: 1% auto;
+        }
+         
+    section[class="section_two"]{
+        display: flex;
+        flex-direction: row;
+        margin: 1% auto;
+    }
+        input{
+            margin: 1%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 1.8%;
+            font-size: 2rem;
+            border-color: var(--nav_bar_color);
+            box-shadow: 1px 1.3px 2px black;
+            border-radius: 3%;
+        }
+        #rua{
+            width: 70%;
+        }
+        #uf{
+            width: 20%;
+        }
+        #cidade{
+            width: 20%;
+        }
+        #bairro{
+            width: 50%;
+        }
+        button{
+            border-radius: 5%;
+            border: none;
+            font-size: 2.5rem;
+            color: var(--button_text_color);
+            padding: 1rem;
+            box-shadow: 1px 1.3px 2px black;
+            margin-top: 5%;
+            background-color: var(--button_color);
+        }
+        img{
+            width: 9rem;
+            line-height:2;
+        }
+    }
+    
